@@ -1,0 +1,97 @@
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'css/design1.css'%}">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <title>Garbage Monitoring Project</title>
+   
+</head>
+
+<body>
+      
+        <h1 class="heading">Garbage Monitoring</h1>
+        <div class="header-right">
+            <a href="home" class="mybutton">Home</a>
+            <a href="about" class="mybutton">About</a>
+            <a href="contact" class="mybutton">Contact</a>
+        </div>
+            <hr>
+        <div class ="container" >
+            <p class ="insidecontainer">Embrace data analytics and internet of things for your waste management company.
+                 By using our technology which uses a suite of sensors, microcontrollers and algorithms, your garbage trucks will be able to better
+            calculate their routes. This will help to reduce amount of time on the road; thus reducing fuel consumption,
+            reducing maintenance in other words increasing productivity. Moreover getting a better sense of your data will
+            enable your company to better set schedules for your garbage retrieval. This will propel your company towards 
+            the smart city initiative. 
+            </p>
+        </div>
+            <hr>
+            <div class = "container2">
+                <p class = "insidecontainer"> City-span data iot grid</p>
+                    <div class = "">
+                        <img src="static/images/untitled.jpg" class="w3-round" alt="city grid"
+                         style="width:300px;height:300px;">
+                         <div class = "container3">
+                            <p class ="insidecontainer">Register yourself or login so that we can study your case and adapt our technology
+                             layout to your situation. We will optimise your garbage retrieval schedules, paths and efficiency</p>
+                             <a href="register" class="mybutton">Register</a>
+                             <a href="login" class="mybutton">Login</a>
+
+                         </div>   
+            </div>
+            
+            
+            </div>
+           
+            <div class = "container2">
+                <p class = "insidecontainer">
+                   By using our technology, your company will not only increase productivity but also 
+                   bring its contribution towards the saving environment by bringing technology, sustainibiliy
+                   and community.Our mission statement was to bring the environment-conscious perspective and we did 
+                   this by using the United Nations sustainable development goals as template.  
+                </p>
+                <div class="w3-content w3-section" style="max-width:200px">
+                  
+                    <img class="mySlides w3-animate-fading" src="static/images/1.png" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="static/images/2.png" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="static/images/3.png" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="static/images/4.png" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="static/images/5.png" style="width:100%">
+                    <img class="mySlides w3-animate-fading" src="static/images/6.png" style="width:100%">
+
+                    
+                  </div>
+                  
+                  <script>
+                  var myIndex = 0;
+                  carousel();
+                  
+                  function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 9000);    
+                  }
+                  </script>
+            </div>
+            
+
+
+</body>
+
+
+</html>
