@@ -111,8 +111,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = [
-    
-    "C:/Work/AI_and_robotics/MIAR_1st_semester/LIIA/Garbage_monitoring_system/Djangoenv/GMSwebsite/static",
-]
+                os.path.join(BASE_DIR, "static"),
+            ]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
